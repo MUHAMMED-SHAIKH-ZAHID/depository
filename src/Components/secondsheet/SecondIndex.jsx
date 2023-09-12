@@ -1,18 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "../secondsheet/secondindex.css";
-import iphone from "../../Images/phone14 Pro.png";
 import mac from "../../Images/Mac.png";
-import mac13 from '../../Images/mac13.png'
-
 import blackwebsite from "../../Images/Black.jpg";
-
-import black from "../../Images/black.mp4";
 import blackstretch from "../../Images/blackstretch.mp4"
 import { RiCodeSSlashFill } from "react-icons/ri";
 import { BsLink } from "react-icons/bs";
 import { FiInfo } from "react-icons/fi";
 import Howerbtn from "../Howerbtn";
-import jssvg from '../../Images/svg/javascript.svg'
 import bootstrap from '../../Images/svg/bootstrap.svg'
 import node from '../../Images/svg/nodejs.svg'
 import mongodb from '../../Images/svg/mongodb.png'
