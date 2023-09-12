@@ -1,29 +1,24 @@
 import React from 'react'
+import Index1 from './firstsheet/Index1'
+import Navbar from './firstsheet/Navbar'
+import SecondIndex from './secondsheet/SecondIndex'
+import TestingComponent from './TestingComponent'
+import Test2 from './Test2'
+import Socialmedia from './secondsheet/Socialmedia'
+import Footer from './lastsheet/Footer'
 
-import './main.css'
-import Social from './Social'
-import Data from './Data'
-import Stack from './Stack'
+
 
 const Main = () => {
   return (
     <div>
-        <div className="text-black grid py-6 pb-2  ">
-          <div className=" grid gap-y-6  gap-1.5">
-            
-            <div className="grid lg:grid-cols-[116px_1fr_1fr] grid-cols-[20px_1fr]  gap-x-2 pt-[5.5rem] items-center">
-             <div className="">
-               <Social />
-              </div>  
-                <div className="  home__img order-2">
-                </div>
-                <div className="lg:order-1 order-2 col-start-1  col-end-3 lg:col-auto  ">    <Data /></div>
-                
-            </div>
-           
-            </div>
-                <Stack />
-        </div>
+       <Navbar />
+       <Index1 />
+       <Socialmedia />
+       <SecondIndex />
+      <Footer />
+       {/* <TestingComponent />   */}
+       {/* <Test2 />  */}
     </div>
   )
 }

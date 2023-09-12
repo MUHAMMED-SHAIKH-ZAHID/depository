@@ -1,0 +1,103 @@
+
+
+.website::-webkit-scrollbar{
+    display:none
+}
+.website {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .infodiv{
+    display: none;
+    z-index: 5;  top: -1.7rem;
+  }
+
+  .infobtn:hover .infodiv{
+    display: block;
+   
+    /* animation: divsize .7s ease forwards; */
+  }
+  
+  @keyframes divsize {
+    to{
+    
+    }
+  }
+
+  .infobtn:hover .infotext{
+    opacity: 0;
+  }
+
+  .info-absheading{
+   position: absolute;
+   padding-top: 2.2rem;
+   padding-left: 6.2rem;
+  }
+
+
+  .infobtn:hover .info-absheading{
+   animation: totop 1s ease forwards;
+  }
+
+  @keyframes totop {
+    to{
+      padding-top: .5rem;
+    }
+    
+  }
+
+  .infodetails{
+    position: absolute;
+    padding-top: 4rem;
+  }
+
+  .infobtn:hover .infodetails{
+    animation: detailstop .4s ease forwards; 
+  }
+  @keyframes detailstop {
+    to{
+      padding-top: 2.5rem;
+    }
+    
+  }
+  
+
+  .infoicons{
+    position: absolute;
+    padding-top: 7rem;
+    opacity: 0;
+  }
+ 
+  .infobtn:hover .infoicons{
+    animation: changeposition .1s forwards , iconstop 1s ease-in-out forwards;
+  }
+  @keyframes changeposition {
+    to{
+      position: relative;
+    }
+  }
+  
+  @keyframes iconstop {
+    to{
+      opacity: 1;
+    }
+  }
+
+  .infobackground{
+    height: 10rem;
+   width: 18rem;
+   opacity: .2;
+  }
+
+  .infobtn:hover .infobackground{
+  animation: bggrow .5s forwards ;
+  }
+  @keyframes bggrow {
+    to{
+     opacity: 1;
+    }
+  }
+  
+
+

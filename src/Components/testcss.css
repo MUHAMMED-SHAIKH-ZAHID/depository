@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap");
+body {
+ 
+  font-family: "Poppins";
+}
+
+.wrapper {
+ 
+  position: relative;
+}
+
+
+
+/* svg {
+  position: absolute;
+  top: 12em;
+  left: 10vw;
+  width: 50vw;
+} */
+svg .mask {
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  width: 300vw;
+}
+.container .col {
+  display: flex;
+  gap: 3em;
+}
+.container .col p {
+  font-size: 0.8rem;
+}
+.container section {
+  width: 100vw;
+  padding: 20vw 10vw;
+}
+.container section h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+.container section p {
+  font-size: 1.2rem;
+  width: 50vw;
+}
+
+
+section {
+  height: 100vh;
+}
+
+
