@@ -20,8 +20,8 @@ import redux from "../../Images/svg/redux.svg";
 const Socialmedia = () => {
   return (
     <div>
-      <div className="md:h-screen  ">
-        <div className="md:text-[2rem] font-noto text-3xl  text-center">
+      <div className="h-screen  ">
+        <div className="md:text-[2rem] pt-10 font-noto text-3xl  text-center">
           Social Media
         </div>
         <div className="grid lg:grid-cols-[3fr,2fr,3fr] md:grid-cols-[2fr,2fr]   pt-10">
@@ -102,14 +102,15 @@ const Socialmedia = () => {
 
         <div className="flex justify-center pt-3 pb-3 md:pb-0 md:pt-8">
           <div className="flex justify-between md:gap-14">
-            <Howerbtn
+           <a href="https://socialmedia123.netlify.app/" target='_blank' rel="noopener noreferrer"> <Howerbtn
               icon={<BsLink className="mr-2 mt-1" />}
               content={"website"}
-            />
+            /></a>
+            <a href="https://github.com/MUHAMMED-SHAIKH-ZAHID/Social-Media" target='_blank' rel="noopener noreferrer">
             <Howerbtn
               icon={<RiCodeSSlashFill className="mr-2 mt-1" />}
               content={"code"}
-            />
+            /></a>
             <div className="hidden relative md:flex infobtn ">
               <div className="flex justify-center  p-3 text-sm md:text-lg uppercase font-noto infotext ">
                 <FiInfo className="mr-2 mt-1 " /> Info
@@ -121,7 +122,7 @@ const Socialmedia = () => {
                   </div>
                   <div className="infodetails">
                     <div className="standard">
-                      E-Commerse website with a focus on simplicity for black
+                    social media website fully responsive and  a focus on simplicity for black
                       dress and clean design , this store priortize user
                       experience{" "}
                     </div>

@@ -8,7 +8,7 @@ import Data from './Data'
 const Index1 = () => {
 
   return (
-    <div>
+    <div id='home'>
          <div className="text-black grid   md:h-screen md:mb-5  mb-10">
           <div className=" grid gap-y-6  gap-1.5">
             

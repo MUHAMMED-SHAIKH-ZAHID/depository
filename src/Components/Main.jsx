@@ -1,9 +1,9 @@
 import React from 'react'
 import Index1 from './firstsheet/Index1'
 import Navbar from './firstsheet/Navbar'
-import SecondIndex from './secondsheet/SecondIndex'
-import Socialmedia from './secondsheet/Socialmedia'
 import Footer from './lastsheet/Footer'
+import About from './about/About'
+import Projects from './secondsheet/Projects'
 
 
 
@@ -12,8 +12,8 @@ const Main = () => {
     <div>
        <Navbar />
        <Index1 />
-       <Socialmedia />
-       <SecondIndex />
+       <About />
+       <Projects />
       <Footer />
 
     </div>

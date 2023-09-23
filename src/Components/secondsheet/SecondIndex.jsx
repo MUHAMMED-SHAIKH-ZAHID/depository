@@ -37,7 +37,7 @@ const SecondIndex = () => {
 
   return (
 
-        <div className=" md:h-screen ">
+        <div  className=" md:h-screen ">
 
           <div className="grid lg:grid-cols-[1fr] gird-cols-1 pt-5  justify-center ">
            
@@ -45,7 +45,7 @@ const SecondIndex = () => {
             <div className="">
               <div className="relative">
                 <img className="relative z-50" src={mac} alt="" />
-                <video  autoPlay loop muted controls={false} className=" absolute rounded-3xl md:top-[-25px] sm:top[-20px] top-[-1vh] left-[10vw] sm:left-[4.2rem] md:left-[5.3rem] lg:left-[6.2rem] w-[80%] h-full" poster="poster-image.jpg">
+                <video   autoPlay loop muted controls={false} className=" absolute rounded-3xl md:top-[-25px] sm:top[-20px] top-[-1vh] left-[10vw] sm:left-[4.2rem] md:left-[5.3rem] lg:left-[6.2rem] w-[80%] h-full" poster="poster-image.jpg">
         <source src={blackstretch} type="video/mp4"  />      </video>
               </div>
             </div>
@@ -84,8 +84,8 @@ const SecondIndex = () => {
          </div>
               <div className="flex justify-center pt-3 pb-3 md:pb-0 md:pt-5">
             <div className="flex justify-between md:gap-14">
-            <Howerbtn icon={<BsLink className='mr-2 mt-1' />}  content={"website"} />
-            <Howerbtn icon={ <RiCodeSSlashFill className='mr-2 mt-1'/>} content={"code"} />
+            <a href="https://blackclothing.cyclic.app/" target='_blank' rel="noopener noreferrer"><Howerbtn icon={<BsLink className='mr-2 mt-1' />}  content={"website"} /></a>
+           <a href="https://github.com/MUHAMMED-SHAIKH-ZAHID/blackclothing.store" target='_blank' rel="noopener noreferrer"><Howerbtn icon={ <RiCodeSSlashFill className='mr-2 mt-1'/>} content={"code"} /></a>
             <div className="hidden relative md:flex infobtn ">
             <div className="flex justify-center  p-3 text-sm md:text-lg uppercase font-noto infotext ">
             <FiInfo    className='mr-2 mt-1 '/> Info  

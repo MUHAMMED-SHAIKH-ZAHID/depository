@@ -10,7 +10,7 @@
 
   .infodiv{
     display: none;
-    z-index: 5;  top: -1.7rem;
+    z-index: 999;  top: -1.7rem;
   }
 
   .infobtn:hover .infodiv{
@@ -31,18 +31,19 @@
 
   .info-absheading{
    position: absolute;
-   padding-top: 2.2rem;
-   padding-left: 6.2rem;
+   padding-top: 7.8rem;
+   padding-left: 4.2rem;
   }
 
 
   .infobtn:hover .info-absheading{
-   animation: totop 1s ease forwards;
+   animation: totop .8s ease forwards;
   }
 
   @keyframes totop {
     to{
       padding-top: .5rem;
+      padding-left: 5.2rem;
     }
     
   }
@@ -50,14 +51,16 @@
   .infodetails{
     position: absolute;
     padding-top: 4rem;
+    opacity: 0;
   }
 
   .infobtn:hover .infodetails{
-    animation: detailstop .4s ease forwards; 
+    animation: detailstop 1.5s ease forwards; 
   }
   @keyframes detailstop {
     to{
       padding-top: 2.5rem;
+      opacity: 1;
     }
     
   }
@@ -70,7 +73,7 @@
   }
  
   .infobtn:hover .infoicons{
-    animation: changeposition .1s forwards , iconstop 1s ease-in-out forwards;
+    animation: changeposition .1s forwards , iconstop 2s ease-in-out forwards;
   }
   @keyframes changeposition {
     to{
@@ -85,6 +88,8 @@
   }
 
   .infobackground{
+    position: absolute;
+    top: -5.5rem;
     height: 10rem;
    width: 18rem;
    opacity: .2;

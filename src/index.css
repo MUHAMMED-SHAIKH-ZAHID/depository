@@ -9,8 +9,23 @@
     transform: scale(2);
     transition: transform 0.3s ease;
   }
+  .iconzoom{
+    transform: scale(2.2);
+    transition: transform 0.5s ease-in-out;
+  }
+  .tiny{
+    font-size: 4px;
+  }
+  .smaller{
+    font-size: 8px;
+  }
+  .sevenpx{
+    font-size: 7px;
+  }
+ 
+  
   .small{
-    font-size: 10px;
+    font-size: 11px;
   }
   .medium{
     font-size: 16px;
