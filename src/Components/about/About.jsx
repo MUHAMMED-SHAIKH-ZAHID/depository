@@ -4,7 +4,7 @@ import google from '../../Images/About/Google.svg'
 import jwt from '../../Images/About/jwt.svg'
 import socketio from '../../Images/About/socketio.svg'
 import twilio from '../../Images/About/twilio.png'
-import shaikhimg from '../../Images/shaikh.png'
+import bookbackground from '../../Images/bookbackground.jpg'
 
 const About = () => {
     const API = [
@@ -23,27 +23,43 @@ const About = () => {
 
   return (
     <div className='md:h-screen' id='about'>
-      <div className="grid md:grid-cols-[1fr,2fr]">
-      <div className="grid grid-rows-[2fr,8fr] md:h-screen ">
-        <div className=""></div>
-        <div className="p-2 flex mb-4">
+      <div className="grid md:grid-cols-[1fr,2fr] grid-rows-[1px,1fr]">
+      <div className="grid md:grid-rows-[2fr,8fr] grid-rows-[1px,1fr] md:h-screen">
+        <div className="relative pt-10 uppercase">
+        
+        </div>
+        <div className="p-2 md:flex mb-4 relative bookWrap hidden ">
+          
+        
+    
+          
+          <div className=" h-full grid w-full mx-5 md:mx-0   overflow-hidden  page  "> 
+          <div className="flex justify-around items-center relative " >
+              <div className="absolute aspect-auto h-80 w-80 rounded-full left-[-3rem] bg-black flex justify-center align-middle ">
+              <div className="font-semibold text-white text-xl m-auto portfolio uppercase" draggable="true">
+                portfolio
+                </div>
 
-        <div className="p-3 border-2 container  ">
-          <div className="bg-zinc-100 h-full grid  front  "> 
-          <div className="flex justify-around items-center">
-            <div className="font-semibold text-xl" draggable="true">Portfolio</div>
+              </div>
+              
           </div>
           
-          </div>
+        </div>
+        <div className="left absolute  h-full  md:w-[2rem] w-[2.9rem] bg-[rgba(232,229,234)]  grid border-r border-[#bfbebe] ">
+        <div className="vertical flex justify-end items-center small">
+          
+          <div className="pb-2">SHAIKH ZAHID </div>
+          <div className="pb-8 font-bold "> 2023</div>
+         
+</div>
+
         </div>
         </div>
           
       </div>
       <div className="second-col  " >
        <div className=" md:h-full w-full md:py-20 py-5 pl-5 md:pl-20">
-        <div className="grid sm:grid-cols-[3fr,2fr] grid-cols-[6fr,8rem] w-full   h-full 
-        ">
-          
+        <div className="grid sm:grid-cols-[3fr,2fr] grid-cols-[6fr,8rem] w-full h-full">
             <div className="flex  border-r-2 relative firstpage border border-s-4  ">
             <div className="absolute bottom-[.3rem] w-[90%]   block right-[1rem] custom-shadow"></div>
             <div className="absolute top-[-2rem] w-[98%]   block right-0 custom-shadow"></div>
@@ -90,7 +106,7 @@ const About = () => {
               {API.map((item)=>(
                 <>
                 <div className="md:pl-20 pl-7 md:pt-5 pt-4 flex small  items-center  ">
-                    <img src={item.src} className='md:w-12 md:h-12 w-5 h-5 md:mr-1 mr-2 hover:zoom' alt="" />
+                    <img src={item.src} className='md:w-12 md:h-12 w-5 h-5 md:mr-1 mr-2 hover:minizoom' alt="" />
                     <span className='md:font-bold font-semibold md:small smaller'>{item.title} </span> <span className='sevenpx md:small'>{item.description}</span>
                     <div className=""></div>
                     

@@ -81,7 +81,7 @@ const Socialmedia = () => {
           </div>
         </div>
 
-        <div className="grid md:hidden pt-3">
+        <div className="grid md:hidden pt-4">
           <div className="px-4">
             <div className="standard">
               Social Media website is an online platform enabling individuls and
@@ -122,9 +122,7 @@ const Socialmedia = () => {
                   </div>
                   <div className="infodetails">
                     <div className="standard">
-                    social media website fully responsive and  a focus on simplicity for black
-                      dress and clean design , this store priortize user
-                      experience{" "}
+                    Social Media website is an online platform enabling individuls to connect, share, and interact through people
                     </div>
                   </div>
 

@@ -7,8 +7,8 @@ import {BsWhatsapp} from 'react-icons/bs'
 
 const Footer = () => {
   return (
-    <div className='bg-[#F9F9F9] rounded-t-xl' id='contact'>
-        <div className="pt-5">SHaikh Zahid</div>
+    <div className='bg-[#F9F9F9] rounded-t-xl px-1' id='contact'>
+        <div className="pt-5">shaikh zahid</div>
         <div className="grid md:grid-cols-[1fr,1fr] pt-10  h-[20rem] mb-10 md:mb-0">
           <div className="self-end">
             <div className=" flex">

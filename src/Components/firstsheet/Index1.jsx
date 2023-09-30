@@ -12,7 +12,7 @@ const Index1 = () => {
          <div className="text-black grid   md:h-screen md:mb-5  mb-10">
           <div className=" grid gap-y-6  gap-1.5">
             
-            <div className="grid lg:grid-cols-[116px_1fr_1fr] grid-cols-[5px_1fr]  gap-x-2 pt-[5.5rem] items-center">
+            <div className="grid lg:grid-cols-[116px_1fr_1fr] grid-cols-[5px_1fr]  gap-x-2 pt-[2.5rem] items-center">
              <div className="">
                <Social />
               </div>  

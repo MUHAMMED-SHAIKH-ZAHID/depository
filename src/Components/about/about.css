@@ -2,6 +2,7 @@
   .custom-shadow {
     height: 3px;
     box-shadow: 0 18px 16px 0 rgba(0,0,0,0.2);  }
+ */
 
  .firstpage{
     background-image: linear-gradient(to right, #eeeeee 0%, #f6f6f6 80%, #f7f7f7 80%, #ffffff 100%);
@@ -11,3 +12,86 @@
     background-image: linear-gradient(to left, #e4e2e2 0%, #f6f6f6 50%, #f7f7f7 50%, #ffffff 100%);
 
 }
+.front{
+  background-image: url('../../Images/bookbackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  height: 100%;
+  width: 100%;
+}
+.bookWrap{
+  perspective: 2000px;
+}
+.page{
+  position: relative;
+  background: linear-gradient(45deg,  #DAD5DC 0%, #f2ebf4 100%);
+  border-radius: 1rem 0rem 0rem 1rem;
+  -webkit-box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
+-moz-box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
+box-shadow: 13px 13px 8px 0px rgba(151, 146, 153,0.6);
+-webkit-transform: rotate3d(0,1,0,35deg);
+-moz-transform: rotate3d(0,1,0,35deg);
+transform: rotate3d(0,1,0,35deg);
+}
+
+.page:hover{
+
+}
+
+.page:hover .portfolio{
+  animation:cover 2s linear infinite;
+}
+
+@keyframes cover {
+  20% { color:lime }
+  40% { color:dodgerblue }
+  60% { color:gold }
+  80% { color:cyan }
+}
+.left{
+  top: 0;
+  box-shadow: 0px 5px 5px -5px rgba(0, 0, 0, 0.5),
+            0px -5px 5px -5px rgba(0, 0, 0, 0.5);
+
+  -webkit-transform: rotate3d(0,1,0,-25deg);
+  -moz-transform: rotate3d(0,1,0,-25deg);
+  transform: rotate3d(0,1,0,-25deg);
+}
+
+.page:hover .left{
+  display: block;
+}
+
+
+.cover {
+ background: linear-gradient(45deg,  #DAD5DC 0%, #f2ebf4 100%);
+}
+
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 2rem; /* Adjust the height as needed */
+  display: inline-block;
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+

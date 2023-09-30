@@ -37,7 +37,7 @@ const SecondIndex = () => {
 
   return (
 
-        <div  className=" md:h-screen ">
+        <div  className=" md:h-screen mt-10">
 
           <div className="grid lg:grid-cols-[1fr] gird-cols-1 pt-5  justify-center ">
            
