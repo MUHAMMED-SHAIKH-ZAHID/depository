@@ -1,11 +1,9 @@
-
-
 .website::-webkit-scrollbar{
     display:none
 }
 .website {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
   }
 
   .infodiv{
@@ -15,8 +13,6 @@
 
   .infobtn:hover .infodiv{
     display: block;
-   
-    /* animation: divsize .7s ease forwards; */
   }
   
   @keyframes divsize {
@@ -98,6 +94,7 @@
   .infobtn:hover .infobackground{
   animation: bggrow .5s forwards ;
   }
+  
   @keyframes bggrow {
     to{
      opacity: 1;

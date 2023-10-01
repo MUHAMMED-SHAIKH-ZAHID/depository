@@ -84,7 +84,7 @@ opacity: 0;
   width: 1rem;
   border-radius: 20%;
   z-index: 2 ;
-  padding: 1rem; /* Adjust padding as needed */
+  padding: 1rem; 
   transition: transform 1s ease-in-out; 
   transform-origin: center;
  
@@ -109,7 +109,7 @@ opacity: 0;
 
 .icon-item:hover  .background {
   display: block;
-  z-index: 3 ; /* Send the background behind the icon when hovering */
+  z-index: 3 ;
   animation: bg 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards ;
 }
 

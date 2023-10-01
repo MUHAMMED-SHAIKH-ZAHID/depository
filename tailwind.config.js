@@ -14,14 +14,5 @@ module.exports = {
     },
   },
   plugins: [
-    // function ({ addUtilities }) {
-    //   const newUtilities = {
-    //     '.zoomer': {
-    //       '@apply hover:scale-150 cursor-pointer transition-all duration-700 ease-in-out': {},
-    //     },
-    //   };
-
-    //   addUtilities(newUtilities, ['hover']);
-    // },
   ],
 }
