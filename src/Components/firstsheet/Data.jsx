@@ -1,9 +1,6 @@
 import React from 'react'
-import { gsap } from 'gsap'
-
-
 import Wave from '../../Images/Waving Hand Sign Emoji.png'
-import {FiSend} from 'react-icons/fi'
+
 
 const Data = () => {
   return (
