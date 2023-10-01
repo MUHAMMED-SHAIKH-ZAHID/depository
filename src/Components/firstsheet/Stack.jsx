@@ -53,9 +53,7 @@ const Stack = () => {
     }));
   }
 
-  const Randomdelay = () =>{
-    return Math.floor(Math.random()*2)+1  
-  }
+
   return (
     <div className="pt-14  md:overflow-x-hidden">
       <div className=" flex md:hidden justify-center items-center pb-2"> Tech Stack</div>

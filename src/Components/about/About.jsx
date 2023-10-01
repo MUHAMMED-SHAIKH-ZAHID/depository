@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './about.css'
 import google from '../../Images/About/Google.svg'
 import jwt from '../../Images/About/jwt.svg'
 import socketio from '../../Images/About/socketio.svg'
 import twilio from '../../Images/About/twilio.png'
-import bookbackground from '../../Images/bookbackground.jpg'
 
 const About = () => {
     const API = [
@@ -14,12 +13,7 @@ const About = () => {
         {src:twilio,title:"Twilio - ",description:" for mes" }
     ]
     
-      const [password, setPassword] = useState('');
-      const [showPassword, setShowPassword] = useState(false);
-    
-      const toggleVisibility = () => {
-        setShowPassword(!showPassword);
-      }
+  
 
   return (
     <div className='md:h-screen' id='about'>

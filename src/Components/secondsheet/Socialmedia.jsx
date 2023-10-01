@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import socialmediawebsite from "../../Images/Socialmedia.png";
+import React from "react";
+
 import { RiCodeSSlashFill } from "react-icons/ri";
 import { BsLink } from "react-icons/bs";
 import { FiInfo } from "react-icons/fi";

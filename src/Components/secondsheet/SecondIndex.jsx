@@ -1,7 +1,6 @@
 import React from "react";
 import "../secondsheet/secondindex.css";
 import mac from "../../Images/Mac.png";
-import blackwebsite from "../../Images/Black.jpg";
 import blackstretch from "../../Images/blackstretch.mp4"
 import { RiCodeSSlashFill } from "react-icons/ri";
 import { BsLink } from "react-icons/bs";
