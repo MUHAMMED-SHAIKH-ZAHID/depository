@@ -44,7 +44,7 @@ const SecondIndex = () => {
             <div className="">
               <div className="relative">
                 <img className="relative z-50" src={mac} alt="" />
-                <video   autoPlay loop muted controls={false} className=" absolute rounded-3xl md:top-[-25px] sm:top[-20px] top-[-1vh] left-[10vw] sm:left-[4.2rem] md:left-[5.3rem] lg:left-[6.2rem] w-[80%] h-full" poster="poster-image.jpg">
+                <video   autoPlay loop muted controls={false} className=" absolute rounded-3xl md:top-[-25px]  top-[-1.2vh] left-[10vw] sm:left-[4.2rem] md:left-[5.3rem] lg:left-[6.2rem] w-[80%] h-full" poster="poster-image.jpg">
         <source src={blackstretch} type="video/mp4"  />      </video>
               </div>
             </div>

@@ -4,13 +4,15 @@ import google from '../../Images/About/Google.svg'
 import jwt from '../../Images/About/jwt.svg'
 import socketio from '../../Images/About/socketio.svg'
 import twilio from '../../Images/About/twilio.png'
+import Razorpay from '../../Images/About/Razprpay.png'
 
 const About = () => {
     const API = [
-        {src:google,title:"Google Auth -",description:"us" },
-        {src:jwt,title:"JWT -",description:"json web T" },
-        {src:socketio,title:"Socket.io -",description:"Real " },
-        {src:twilio,title:"Twilio - ",description:" for mes" }
+        {src:google,title:"Google Auth-",description:" used for google user Authentication in app" },
+        {src:jwt,title:"JWT-",description:"json web Tocken for Authorisation and Authencation" },
+        {src:socketio,title:"Socket.io-",description:" Real Time Data Transfer between two servers" },
+        {src:twilio,title:"Twilio- ",description:" for message implementation for user Authentication" },
+        {src:Razorpay,title:"Razorpay- ",description:" Online payment integration through bank transfer" }
     ]
     
   
@@ -63,7 +65,7 @@ const About = () => {
                     <div className="">About</div>
                     <div className="">2023</div>
                 </div>
-                <div className="md:px-16 px-4 pt-8 md:pt-20 items-center md:text-base small font-bold md:py-10 py-5">
+                <div className="md:px-16 px-4 pt-8 md:pt-20 items-center md:text-base small font-bold md:py-8 py-5">
                     <div className="">something</div>
                     <div className="">About me</div>
                 </div>
@@ -71,17 +73,17 @@ const About = () => {
                     <div className="flex">
 
                     <div className="font-bold md:text-2xl text-lg pr-2  ">#1.</div>
-                <div className="md:small smaller">I am Muhammed Shaikh Zahid a self-taught mern stack developer who is more passionate about UI/UX and cretes fully responsive websites</div>
+                <div className="md:small smaller">I am Muhammed Shaikh Zahid a self-taught mern stack developer who is more passionate about UI/UX and creates fully responsive websites</div>
                     </div>
                     
                 </div>
-                <div className="flex md:px-16 px-5 pt-3">
-                    <div className="font-bold md:text-2xl text-lgmd:text-2xl text-lg pr-2  ">02.</div>
-                <div className="md:small smaller">In addition to my professional pursuits, I also have a love for traveling and photography</div>
-                    </div>
-                <div className="flex md:px-16 px-5 pt-3 pb-[3rem]">
-                    <div className="font-bold md:text-2xl text-lg pr-2  ">03.</div>
+                <div className="flex md:px-16 px-5 pt-3 ">
+                    <div className="font-bold md:text-2xl text-lg pr-2  ">02.</div>
                 <div className="md:small smaller">I am always experimenting with new technologies and design trends, as well as finding inspiration on User Experience. </div>
+                    </div>
+                <div className="flex md:px-16 px-5 pt-3">
+                    <div className="font-bold md:text-2xl text-lgmd:text-2xl text-lg pr-2 md:pb-[6rem] pb-[2rem] ">03.</div>
+                <div className="md:small smaller">In addition to my professional pursuits, I also have a love for traveling and photography</div>
                     </div>
                     <div className="absolute tiny bottom-0 p-4">02</div>
 
@@ -96,13 +98,13 @@ const About = () => {
                     <div className="">shaikh zahid</div>
                     <div className="">About</div>
                 </div>
-                <div className="md:pl-20 pl-5 pt-10 md:pt-20 md:pb-14 pb-2 font-bold small md:text-base">API That impleme</div>
+                <div className="md:pl-20 pl-5 pt-10 md:pt-20  pb-2 font-bold small md:text-base">API That impleme</div>
               {API.map((item)=>(
                 <>
-                <div className="md:pl-20 pl-7 md:pt-5 pt-4 flex small  items-center  ">
+                <div className="md:pl-20 pl-7 md:pt-5 pt-4 flex small  items-center justify-center  ">
                     <img src={item.src} className='md:w-12 md:h-12 w-5 h-5 md:mr-1 mr-2 hover:minizoom' alt="" />
-                    <span className='md:font-bold font-semibold md:small smaller'>{item.title} </span> <span className='sevenpx md:small'>{item.description}</span>
-                    <div className=""></div>
+                    <span className='md:font-bold font-semibold md:small smaller'style={{ whiteSpace: 'nowrap' }}>{item.title} </span> <span className='sevenpx md:small grid grid-cols-1 pt-1 md:pt-0'style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{item.description}</span>
+                  
                     
                 </div>
                 </>

@@ -44,7 +44,7 @@ const Footer = () => {
                 
             
         </div>
-        <div className="flex justify-between pt-16 pb-2 small ">
+        <div className="flex justify-between md:pt-16 pt-32  pb-2 small ">
          <div className="">
           <div className="">version</div>
           <div className="">2023 ©</div>
