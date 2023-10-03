@@ -55,7 +55,7 @@ const Stack = () => {
 
 
   return (
-    <div className="pt-14  md:overflow-x-hidden">
+    <div className="md:pt-14 pt-8  md:overflow-x-hidden">
       <div className=" flex md:hidden justify-center items-center pb-2"> Tech Stack</div>
     <div className="flex  ">
       <div className="md:font-semibold  md:medium sm:small flex  ">

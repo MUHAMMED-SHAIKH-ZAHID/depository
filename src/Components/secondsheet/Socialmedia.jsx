@@ -1,11 +1,11 @@
 import React from "react";
-
+import { Suspense } from "react";
+import { lazy } from "react";
 import { RiCodeSSlashFill } from "react-icons/ri";
 import { BsLink } from "react-icons/bs";
 import { FiInfo } from "react-icons/fi";
 import socialmedialight from "../../Images/socialmediawhite.png";
 import socialmediatab from "../../Images/socialmedia-tab.jpg";
-import chatbox from "../../Images/chatbox.png";
 import profile from "../../Images/profile.png";
 import iphone from "../../Images/phone14 Pro.png";
 import notification from "../../Images/notification.png";
@@ -16,6 +16,8 @@ import mongodb from "../../Images/svg/mongodb.png";
 import Reactsvg from "../../Images/svg/reactjs.svg";
 import Tailwindsvg from "../../Images/svg/tailwind.79614a5f61617ba49a0891494521226b.svg";
 import redux from "../../Images/svg/redux.svg";
+import chatbox from "../../Images/chatbox.png";
+const chatboxs =lazy(()=>import  ("../../Images/chatbox.png"));
 
 const Socialmedia = () => {
   return (
@@ -33,6 +35,7 @@ const Socialmedia = () => {
                 alt=""
               />
             </div>
+        
             <div className="flex justify-center align-middle pt-5 ">
               <img
                 className="h-[20rem] rounded-2xl transform transition-transform duration-300 hover:scale-125  origin-top-left"

@@ -10,6 +10,10 @@ import bootstrap from '../../Images/svg/bootstrap.svg'
 import node from '../../Images/svg/nodejs.svg'
 import mongodb from '../../Images/svg/mongodb.png'
 import hbs from '../../Images/svg/hbs.png'
+import { Suspense } from "react";
+import { lazy } from "react";
+import MacbookShimmer from "./MacbookShimmer";
+const VideoComponent = lazy(()=>import ("./VideoComponent"));
 
 
 
@@ -38,14 +42,17 @@ const SecondIndex = () => {
 
         <div  className=" md:h-screen mt-10">
 
-          <div className="grid lg:grid-cols-[1fr] gird-cols-1 pt-5  justify-center ">
+          <div className="lg:grid lg:grid-cols-[1fr] block  pt-5  justify-center ">
            
 
             <div className="">
               <div className="relative">
-                <img className="relative z-50" src={mac} alt="" />
-                <video   autoPlay loop muted controls={false} className=" absolute rounded-3xl md:top-[-25px]  top-[-1.2vh] left-[10vw] sm:left-[4.2rem] md:left-[5.3rem] lg:left-[6.2rem] w-[80%] h-full" poster="poster-image.jpg">
-        <source src={blackstretch} type="video/mp4"  />      </video>
+               
+             
+                <Suspense fallback={<MacbookShimmer />}>
+
+                <VideoComponent />
+                </Suspense>
               </div>
             </div>
 

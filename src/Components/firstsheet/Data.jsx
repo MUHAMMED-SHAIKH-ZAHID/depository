@@ -9,12 +9,12 @@ const Data = () => {
   return (
     <div>
         <div className=" ">
-          <div className="grid grid-cols-[8fr,1fr]">
+          <div className="md:grid flex items-end justify-center  md:grid-cols-[8fr,1fr]">
 
                 <div className=" lg:pt-0 pt-10 text-3xl md:text-5xl text-gray-800 flex">  <Name />
                
                 </div>
-                <div className=""> <img src={Wave} alt='handwave' className='h-10 w-10 ' /></div>
+                <div className=""> <img src={Wave} alt='handwave' className='h-10 w-10 ml-5 md:ml-0 ' /></div>
           </div>
                 <div className="text-xl flex text-center py-4 "><hr className='border border-gray-400  my-4 w-[65px] mr-3' />  Web developer</div>
                 <span className='text-blue-400'>console</span>. <span className='text-yellow-400'>log</span> <span className='text-purple-500'>{'('}</span> <span className='text-purple-500'>{')'}</span>
