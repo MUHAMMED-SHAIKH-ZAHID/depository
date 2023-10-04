@@ -16,7 +16,7 @@ const Index1 = () => {
              <div className="">
                <Social />
               </div>  
-                <div className="  home__img order-2">
+                <div className="  home__img h-[10rem] w-[10rem] order-2">
                 </div>
                 <div className="lg:order-1 order-2 col-start-1  col-end-3 lg:col-auto  ">    <Data /></div>
                 
