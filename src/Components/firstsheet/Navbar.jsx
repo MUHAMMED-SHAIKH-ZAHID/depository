@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 const Navbar = () => {
   const [active,Setactive] = useState('home')
   const navbardata = [
-    {name:"home"},
-    {name:"about"},
-    {name:"project"},
-    {name:"contact"},
+    {id:1,name:"home"},
+    {id:2,name:"about"},
+    {id:3,name:"project"},
+    {id:4,name:"contact"},
 
   ]
   const scrolltosection = (id) => {
@@ -19,7 +19,7 @@ const Navbar = () => {
        <div className=""></div>
       <div className="flex justify-between pt-4 md:pb-3">
         {navbardata.map((item)=>(
-        <div className={`uppercase  cursor-pointer small mx-1 md:mx-0 ${active === item.name ? "text-black":"text-black"}`} onClick={()=>{scrolltosection(item.name);Setactive(item.name)}}>{item.name}</div> 
+        <div className={`uppercase  cursor-pointer small mx-1 md:mx-0 ${active === item.name ? "text-black":"text-black"}` } key={item.id} onClick={()=>{scrolltosection(item.name);Setactive(item.name)}}>{item.name}</div> 
         ))}
       </div>
       </div>

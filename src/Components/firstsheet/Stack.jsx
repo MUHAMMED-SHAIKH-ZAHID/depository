@@ -15,18 +15,18 @@ import node from '../../Images/svg/nodejs.svg'
 
 const Stack = () => {
   const iconData = [
-    { src: jssvg, title: "Java Script", description: "Dynamic" },
-    { src: Reactsvg, title: "React", description: "Component-Based" },
-    { src: htmlsvg, title: "HTML5", description: "Markup" },
-    { src: csssvg, title: "CSS3", description: "Styling" },
-    { src: Tailwindsvg, title: "Tailwind CSS", description: "Utility-First" },
-    { src: scss, title: "SCSS", description: "Stylesheets" },
-    { src: figma, title: "Figma", description: "Design" },
-    { src: bootstrap, title: "Bootstrap", description: "Framework" },
-    { src: redux, title: "Redux", description: "State Management" },
-    { src: git, title: "Git", description: "Version Control" },
-    { src: mongodb, title: "MongoDB", description: "NoSQL Database" },
-    { src: node, title: "Node", description: "JavaScript Runtime" },
+    {id:1, src: jssvg, title: "Java Script", description: "Dynamic" },
+    {id:2, src: Reactsvg, title: "React", description: "Component-Based" },
+    {id:3, src: htmlsvg, title: "HTML5", description: "Markup" },
+    {id:4, src: csssvg, title: "CSS3", description: "Styling" },
+    {id:5, src: Tailwindsvg, title: "Tailwind CSS", description: "Utility-First" },
+    { id:6,src: scss, title: "SCSS", description: "Stylesheets" },
+    { id:7,src: figma, title: "Figma", description: "Design" },
+    {id:8, src: bootstrap, title: "Bootstrap", description: "Framework" },
+    {id:9, src: redux, title: "Redux", description: "State Management" },
+    {id:10, src: git, title: "Git", description: "Version Control" },
+    {id:11, src: mongodb, title: "MongoDB", description: "NoSQL Database" },
+    {id:12, src: node, title: "Node", description: "JavaScript Runtime" },
   ];
 
   const [iconname, setIconname] = useState({
@@ -63,12 +63,12 @@ const Stack = () => {
           
        <div className="pt-0 md:pt-2 pb-10 md:pb-0"> Tech Stack </div>
         </div><span className="md:mx-5 mx-1 mr-2 w-[10px] h-12 border-r md:border-r border-black hidden md:flex tech "></span>
-        <div class="logos relative  ">
+        <div className="logos relative  ">
           
         <ul className="md:flex gap-2 items-center text-center align-middle justify-center md:gap-5 icon-list hidden">
-  {iconData.map((icon, index) => (<>
+  {iconData.map((icon, index) => (<React.Fragment  key={index+"stack"}>
  
-    <li key={index} className="icon-item" style={{ animationDelay: `${index * 0.3}s` }}
+    <li className="icon-item" style={{ animationDelay: `${index * 0.3}s` }}
     >
       <div className="icon-wrapper relative">
       <div className=" background  bg-gray-400 bg-opacity-40 backdrop-blur-md md:p-4 rounded-lg"></div>
@@ -87,13 +87,13 @@ const Stack = () => {
         </div>
       </div>
     </li>
-    </>
+    </React.Fragment>
   ))}
 </ul>
         <ul className="flex gap-2 items-center text-center align-middle justify-center md:gap-5 icon-list md:hidden">
-  {iconData.map((icon, index) => (<>
+  {iconData.map((icon, index) => (<React.Fragment  key={index}>
  
-    <li key={index} className="icon-item" style={{ animationDelay: `${index * 0.3}s`  }} 
+    <li className="icon-item" style={{ animationDelay: `${index * 0.3}s`  }} 
     >
       <div className="icon-wrapper relative" onClick={() => handleclick(icon.title, icon.description)}  onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
         <img
@@ -104,7 +104,7 @@ const Stack = () => {
         />
       </div>
     </li>
-    </>
+    </React.Fragment>
   ))}
 </ul>
  {isTouchActive && <div className="grid justify-center items-center pt-4 ">

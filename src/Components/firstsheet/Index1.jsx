@@ -2,11 +2,26 @@ import '../firstsheet/index.css'
 import Social from './Social'
 import Stack from './Stack'
 import Data from './Data'
+import { useEffect, useState } from 'react'
 
 
 
 const Index1 = () => {
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
 
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth >= 768);
+    };
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => {
+      window.removeEventListener('resize', checkScreenSize);
+    };
+  }, []);
+  
+  
   return (
     <div id='home'>
          <div className="text-black grid   md:h-screen md:mb-5  mb-10">
@@ -16,7 +31,7 @@ const Index1 = () => {
              <div className="">
                <Social />
               </div>  
-                <div className="  home__img h-[10rem] w-[10rem] order-2">
+                <div className={isLargeScreen ? "home__img order-2":"home__imges order-2"}>
                 </div>
                 <div className="lg:order-1 order-2 col-start-1  col-end-3 lg:col-auto  ">    <Data /></div>
                 

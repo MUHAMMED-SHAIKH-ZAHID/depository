@@ -99,15 +99,15 @@ const About = () => {
                     <div className="">About</div>
                 </div>
                 <div className="md:pl-20 pl-5 pt-10 md:pt-20  pb-2 font-bold small md:text-base">API That impleme</div>
-              {API.map((item)=>(
-                <>
+              {API.map((item,index)=>(
+                <React.Fragment key={index+"about"}>
                 <div className="md:pl-20 pl-7 md:pt-5 pt-4 flex small  items-center justify-center  ">
                     <img src={item.src} className='md:w-12 md:h-12 w-5 h-5 md:mr-1 mr-2 hover:minizoom' alt="" />
-                    <span className='md:font-bold font-semibold md:small smaller'style={{ whiteSpace: 'nowrap' }}>{item.title} </span> <span className='sevenpx md:small grid grid-cols-1 pt-1 md:pt-0'style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{item.description}</span>
+                    <span className='md:font-bold font-semibold md:small smaller'style={{ whiteSpace: 'nowrap' }}>{item.title} </span> <span className='sevenpx md:small grid grid-cols-1'style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{item.description}</span>
                   
                     
                 </div>
-                </>
+                </React.Fragment>
               ))}
                
             </div>
