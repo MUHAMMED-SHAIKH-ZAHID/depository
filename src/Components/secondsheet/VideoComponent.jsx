@@ -1,7 +1,5 @@
 // VideoComponent.js
 import React from 'react';
-import { Suspense } from "react";
-import { lazy } from "react";
 import blackstretch from "../../Images/blackstretch.mp4"
 import mac from "../../Images/Mac.png";
 

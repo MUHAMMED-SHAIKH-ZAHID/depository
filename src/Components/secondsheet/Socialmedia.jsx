@@ -1,6 +1,4 @@
 import React from "react";
-import { Suspense } from "react";
-import { lazy } from "react";
 import { RiCodeSSlashFill } from "react-icons/ri";
 import { BsLink } from "react-icons/bs";
 import { FiInfo } from "react-icons/fi";
@@ -17,7 +15,7 @@ import Reactsvg from "../../Images/svg/reactjs.svg";
 import Tailwindsvg from "../../Images/svg/tailwind.79614a5f61617ba49a0891494521226b.svg";
 import redux from "../../Images/svg/redux.svg";
 import chatbox from "../../Images/chatbox.png";
-const chatboxs =lazy(()=>import  ("../../Images/chatbox.png"));
+
 
 const Socialmedia = () => {
   return (
