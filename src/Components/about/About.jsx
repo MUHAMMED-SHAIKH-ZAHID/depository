@@ -81,7 +81,7 @@ const About = () => {
                     <div className="font-bold md:text-2xl text-lg pr-2  ">02.</div>
                 <div className="md:small smaller">I am always experimenting with new technologies and design trends, as well as finding inspiration on User Experience. </div>
                     </div>
-                <div className="flex md:px-16 px-5 pt-3 pb-[3rem] md:pb-[1rem]">
+                <div className="flex md:px-16 px-5 pt-3 pb-[2rem] md:pb-[1rem]">
                     <div className="font-bold md:text-2xl text-lgmd:text-2xl text-lg pr-2 md:pb-[6rem] pb-[2rem] ">03.</div>
                 <div className="md:small smaller">In addition to my professional pursuits, I also have a love for traveling and photography</div>
                     </div>
