@@ -19,7 +19,7 @@ const Navbar = () => {
        <div className=""></div>
       <div className="flex justify-between pt-4 md:pb-3">
         {navbardata.map((item)=>(
-        <div className={`uppercase  cursor-pointer small mx-1 md:mx-0 ${active === item.name ? "text-black":"text-black"}` } key={item.id} onClick={()=>{scrolltosection(item.name);Setactive(item.name)}}>{item.name}</div> 
+        <div className={`uppercase  cursor-pointer small mx-2 md:mx-0 ${active === item.name ? "text-black":"text-black"}` } key={item.id} onClick={()=>{scrolltosection(item.name);Setactive(item.name)}}>{item.name}</div> 
         ))}
       </div>
       </div>
