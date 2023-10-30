@@ -18,18 +18,18 @@ const About = () => {
   
 
   return (
-    <div className='md:h-screen' id='about'>
+    <div className='md:h-screen xl:h-[50rem] ' id='about'>
       <div className="grid md:grid-cols-[1fr,2fr] grid-rows-[1px,1fr]">
       <div className="grid md:grid-rows-[2fr,8fr] grid-rows-[1px,1fr] md:h-screen">
         <div className="relative pt-10 uppercase">
         
         </div>
-        <div className="p-2 md:flex mb-4 relative bookWrap hidden ">
+        <div className="p-2 md:flex mb-4 relative bookWrap xl:h-[35rem] md:h-[40rem] hidden ">
           
         
     
           
-          <div className=" h-full grid w-full mx-5 md:mx-0   overflow-hidden  page  "> 
+          <div className=" h-full grid w-full mx-5 md:mx-0 lg:h-full   overflow-hidden  page  "> 
           <div className="flex justify-around items-center relative " >
               <div className="absolute aspect-auto h-80 w-80 rounded-full left-[-3rem] bg-black flex justify-center align-middle ">
               <div className="font-semibold text-white text-xl m-auto portfolio uppercase" draggable="true">

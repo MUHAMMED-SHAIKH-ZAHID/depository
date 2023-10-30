@@ -55,13 +55,13 @@ const Stack = () => {
 
 
   return (
-    <div className="md:pt-14 pt-8  md:overflow-x-hidden">
+    <div className=" pt-8 md:pt-32  md:overflow-x-hidden">
       <div className=" flex md:hidden justify-center items-center pb-2"> Tech Stack</div>
     <div className="flex  ">
       <div className="md:font-semibold  md:medium sm:small flex  ">
         <div className="hidden md:flex tech">
           
-       <div className="pt-0 md:pt-2 pb-10 md:pb-0"> Tech Stack </div>
+       <div className="pt-0 md:pt-2 pb-10  md:pb-24"> Tech Stack </div>
         </div><span className="md:mx-5 mx-1 mr-2 w-[10px] h-12 border-r md:border-r border-black hidden md:flex tech "></span>
         <div className="logos relative  ">
           

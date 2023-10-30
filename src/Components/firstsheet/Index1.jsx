@@ -24,7 +24,7 @@ const Index1 = () => {
   
   return (
     <div id='home'>
-         <div className="text-black grid   md:h-screen md:mb-5  mb-10">
+         <div className="text-black grid  md:pt-[4.4rem]  md:h-full  md:mb-5  mb-10">
           <div className=" grid gap-y-6  gap-1.5">
             
             <div className="grid lg:grid-cols-[116px_1fr_1fr] grid-cols-[5px_1fr]  gap-x-2 pt-[2.5rem] items-center">

@@ -20,7 +20,7 @@ import chatbox from "../../Images/chatbox.png";
 const Socialmedia = () => {
   return (
     <div>
-      <div className="h-screen  ">
+      <div className=" md:h-full md:mb-32 xl:mb-2  ">
         <div className="md:text-[2rem] pt-10 font-noto text-3xl  text-center">
           Social Media
         </div>
