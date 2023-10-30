@@ -88,7 +88,7 @@ const SecondIndex = () => {
          </div>
               <div className="flex justify-center pt-3 pb-3 md:pb-0 md:pt-5">
             <div className="flex justify-between md:gap-14">
-            <a href="https://blackclothing.cyclic.app/" target='_blank' rel="noopener noreferrer"><Howerbtn icon={<BsLink className='mr-2 mt-1' />}  content={"website"} /></a>
+            <a href="https://blackclothing.onrender.com/" target='_blank' rel="noopener noreferrer"><Howerbtn icon={<BsLink className='mr-2 mt-1' />}  content={"website"} /></a>
            <a href="https://github.com/MUHAMMED-SHAIKH-ZAHID/blackclothing.store" target='_blank' rel="noopener noreferrer"><Howerbtn icon={ <RiCodeSSlashFill className='mr-2 mt-1'/>} content={"code"} /></a>
             <div className="hidden relative md:flex infobtn ">
             <div className="flex justify-center  p-3 text-sm md:text-lg uppercase font-noto infotext ">
