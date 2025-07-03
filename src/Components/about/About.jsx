@@ -93,6 +93,7 @@ const About = () => {
   </div>
 </div>
 </div>
+</div>
 
 <div className="absolute text-xs bottom-0 p-4 text-gray-400">Portfolio Section 02</div>
 
