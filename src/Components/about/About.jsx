@@ -72,31 +72,20 @@ const About = () => {
                 <div className="flex md:px-16 px-5 ">
                     <div className="flex">
 
-                <div className="flex md:px-16 px-5 pt-3">
-  <div className="font-bold md:text-2xl text-lg pr-2">01.</div>
-  <div className="md:text-base text-sm text-gray-700">
-    A detail-oriented frontend developer focused on creating modern, responsive, and user-friendly web applications using the latest web technologies.
-  </div>
-</div>
-
-<div className="flex md:px-16 px-5 pt-3">
-  <div className="font-bold md:text-2xl text-lg pr-2">02.</div>
-  <div className="md:text-base text-sm text-gray-700">
-    Continuously exploring new tools, design systems, and performance optimization strategies to build better digital experiences.
-  </div>
-</div>
-
-<div className="flex md:px-16 px-5 pt-3 pb-[2rem] md:pb-[1rem]">
-  <div className="font-bold md:text-2xl text-lg pr-2">03.</div>
-  <div className="md:text-base text-sm text-gray-700">
-    Strong focus on clean code, accessibility, and seamless UI/UX to ensure every project not only works but feels intuitive to use.
-  </div>
-</div>
-</div>
-</div>
-
-<div className="absolute text-xs bottom-0 p-4 text-gray-400">Portfolio Section 02</div>
-
+                    <div className="font-bold md:text-2xl text-lg pr-2  ">01.</div>
+                <div className="md:small smaller">
+A detail-oriented frontend developer focused on creating modern, responsive, and user-friendly web applications using the latest web technologies</div>
+                    </div>
+                    
+                </div>
+                <div className="flex md:px-16 px-5 pt-3 ">
+                    <div className="font-bold md:text-2xl text-lg pr-2  ">02.</div>
+                <div className="md:small smaller">Continuously exploring new tools, design systems, and performance optimization strategies to build better digital experiences. </div>
+                    </div>
+                <div className="flex md:px-16 px-5 pt-3 pb-[2rem] md:pb-[1rem]">
+                    <div className="font-bold md:text-2xl text-lgmd:text-2xl text-lg pr-2 md:pb-[6rem] pb-[2rem] ">03.</div>
+                <div className="md:small smaller">Strong focus on clean code, accessibility, and seamless UI/UX to ensure every project not only works but feels intuitive to use.</div>
+                    </div>
                     <div className="absolute tiny bottom-0 p-4">02</div>
 
 
